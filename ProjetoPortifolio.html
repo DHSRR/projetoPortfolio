@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ProjetoPortifolio.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/90563926ac.js" crossorigin="anonymous"></script>
+    <title>Portfolio Desenvolvedor</title>
+    <style>
+        #backToTop {
+            display: none; /* Esconde o botão por padrão */
+            position: fixed; /* Fixa o botão no canto inferior direito */
+            bottom: 55px;
+            right: 20px;
+            z-index: 100; /* Certifica-se de que o botão fica acima de outros elementos */
+            background-color: transparent; /* Cor de fundo do botão */
+            color: #8900f9; /* Cor do texto */
+            border: 2px solid #8900f9; /* Remove borda */
+            padding: 10px 20px; /* Espaçamento interno */
+            border-radius: 50px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+        }
+
+    </style>
+</head>
+<body>
+    <!---Cabeçalho-Main-->
+    <div class="background" id="inicio">
+        <nav>
+            <h2 class="logo"><span>My </span>Port<span>folio</span> Web</h2>
+            <ul class="cabeçalho-link">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="mailto:denis.rodrigues@aluno.senai.br" class="btn">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="Main">
+            <h4><i>Olá, Bem Vindos!<br>Me Chamo.</i></h4>
+            <h1>Denis Henrique <span>Rodrigues</span></h1>
+            <h3>E sou um estudante da área de desenvolvimento web <span>Front-end</span></h3>
+            <div class="Container-btn">
+                <form>
+                    <input type="email" nome="email" id="mail" placeholder="Envie seu E-mail">
+                    <input type="submit" name="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Começo-da-seção-sobre-->
+    <section class="background-color-Sobre" id="sobre">
+        <div class="main-sobre">
+            <img src="eu.jpg" alt="Denis Henrique Rodrigues">
+            <div class="Text-sobre">
+                <h2>Sobre-Mim</h2>
+                <h5>Cozinheiro <span>& futuro desenvolvedor web.</span></h5>
+                <p><b>Eu sou um <span><u>"Carioca da Gema"</u></span> nascido e criado no Rio de Janeiro há 39 anos, casado e formado como Técnico em Mecânica Industrial e Tecnólogo em Gastronomia. <br> Hoje fazendo uma transição de carreira na área de TI, buscando ampliar e melhorar meus conhecimentos na área para poder atender ao mercado da melhor forma possível.</b></p>
+                <button class="button"><a href="https://wa.me/c/5521982529836">Vamos conversar</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!--Começo-da-seção-nossos-serviços-->
+    <div class="Container-serviços" id="projetos">
+        <div class="title">
+            <h2>Meus Projetos</h2>
+        </div>
+        <div class="Caixa">
+            <div class="Card">
+                <i class="fa-regular fa-file-word"></i>
+                <h5>Modelo de Currículo</h5>
+                <div class="Paragrafo-button">
+                    <p>Um modelo simples e básico de um currículo com algumas modificações textuais.</p>
+                    <button type="button" onclick="openModal('meu projeto 01.jpg', 'Modelo de Currículo')">Visualizar</button>
+                </div>
+            </div>
+
+            <div class="Card">
+                <i class="fa-solid fa-solar-panel"></i>
+                <h5>Página Flex</h5>
+                <div class="Paragrafo-button">
+                    <p>Um modelo simples e básico de uma página com uso de flexbox com algumas modificações textuais.</p>
+                    <button type="button" onclick="openModal('meu projeto 02.jpg', 'Página Flex')">Visualizar</button>
+                </div>
+            </div>
+
+            <div class="Card">
+                <i class="fa-solid fa-table-cells"></i>
+                <h5>Tabela Informativa</h5>
+                <div class="Paragrafo-button">
+                    <p>Um modelo simples e básico de uma tabela com algumas modificações textuais.</p>
+                    <button type="button" onclick="openModal('meu projeto 03.jpg', 'Tabela Informativa')">Visualizar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Botão para voltar ao topo-->
+    <button onclick="scrollToTop()" id="backToTop">Voltar ao topo</button>
+
+    <!--Rodapé-->
+    <footer>
+        <h6>Denis Henrique Rodrigues</h6>
+        <p><b>Para mais informações e contatos. <br> Acesse minhas redes sociais.</b></p>
+        <div class="Redes-sociais">
+            <a href="https://www.linkedin.com/in/denishsrodrigues"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/usuariobra"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/denis_henrique_rodrigues/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:denis.rodrigues@aluno.senai.br"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/c/5521982529836"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://telegram.org/dl"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://x.com/denishsrodrigue"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="End">
+            <p>Copyright (c) 2024 Denis Henrique</p>
+        </div>
+    </footer>
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+      
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+      
+        // Function to open modal with the correct image
+        function openModal(imgSrc, caption) {
+          modal.style.display = "block";
+          modalImg.src = imgSrc;
+          captionText.innerHTML = caption;
+        }
+      
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+      
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+
+        // Scroll to top button
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // Show or hide the button based on scroll position
+        window.onscroll = function() {
+            var button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
+
+
